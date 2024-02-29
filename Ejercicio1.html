@@ -1,10 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estructura con CSS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            overflow: hidden;
+        }
+
+        .box {
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 100px;
+            box-sizing: border-box;
+            float: left;
+            margin: 10px;
+        }
+
+        .box:nth-child(1) {
+            width: 30%;
+            float: right;
+        }
+
+        .box:nth-child(2) {
+            width: 40%;
+        }
+
+        .box:nth-child(3) {
+            width: 25%;
+        }
+        .box:nth-child(9) {
+            width: 33%;
+            float: right;
+        }
+        .box:nth-child(4) {
+            width: 20%;
+        }
+
+        .box:nth-child(5) {
+            width: 35%;
+        }
+
+        .box:nth-child(6) {
+            width: 45%;
+            float: right;
+        }
+
+        .box:nth-child(7) {
+            width: 28%;
+            float: right;
+        }
+
+        .box:nth-child(8) {
+            width: 22%;
+            float: left;
+        }
+
+
+
+        /* Añade más estilos según sea necesario */
+
+    </style>
 </head>
 <body>
-$END$
+
+<div class="container">
+    <div class="box">DIV1</div>
+    <div class="box">DIV2</div>
+    <div class="box">DIV3</div>
+    <div class="box">DIV4</div>
+    <div class="box">DIV5</div>
+    <div class="box">DIV6</div>
+    <div class="box">DIV7</div>
+    <div class="box">DIV8</div>
+    <div class="box">DIV9</div>
+</div>
+
 </body>
 </html>
